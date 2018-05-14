@@ -1,0 +1,17 @@
+
+<h1>Quiz</h1>
+
+  {{#each model as |viewquiz|}}
+  <div>
+        <h3>{{'Q: '}}{{viewquiz.question}}</h3>
+  </div>
+  <div>
+      <h4><input type="radio" name="optionA" id=optionA>  {{viewquiz.answer1}}</h4>
+      {{' '}}<h4><input type="radio" name="optionB" id=optionB>  {{viewquiz.answer2}}</h4>
+      {{' '}}<h4><input type="radio" name="optionC" id=optionC>  {{viewquiz.answer3}}</h4>
+  </div>
+  {{/each}}
+<br>
+  <div class="col-xs-10 col-xs-offset-1 col-sm-offset-0 col-sm-4 col-md-3">
+      <button class="btn btn-primary btn-lg btn-block" {{action 'back'}}>Back</button>
+  </div>

@@ -1,0 +1,10 @@
+<div id="products">
+  <h3>List of Products</h3>
+    {{#each model as |productlist|}}
+    <ul><a href="{{productlist.productName}}/product" role="button">{{productlist.productName}}</a></ul>
+    {{/each}}
+</div>
+
+<!-- {{#each testArray as |product|}}
+<li>hi</li>
+{{/each}} -->
