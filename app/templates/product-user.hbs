@@ -1,27 +1,44 @@
-<h1>Product Details</h1>
+<div>
+  <div class="container col-xs-12">
 
- <br/><br/>
+    <form class="well form-horizontal" action=" " method="post" id="contact_form">
+      <fieldset>
 
-<div class="jumbotron text-center">
-<!-- vinay code -->
-<div class="form-group row">
-  <label class="col-sm-2 col-form-label">Product Name:</label>
-  <div class="col-sm-1">
-    <label class="form-control-static text-primary">{{model.productName}}</label>
+        <!-- Form Name -->
+        <legend>
+          <center>
+            <h2><b>Product Description</b></h2></center>
+        </legend><br>
+
+
+        <div class="form-group">
+          <label class="col-md-4 control-label">Product Name:</label>
+          <div class="col-md-8 inputGroupContainer">
+            <div class="input-group">
+              <label class="form-control-static text-primary">{{model.productName}}</label>
+            </div>
+          </div>
+        </div>
+
+        <div class="form-group">
+          <label class="col-md-4 control-label">Product Description:</label>
+          <div class="col-md-8 inputGroupContainer">
+            <div class="input-group">
+              <label class="form-control-static text-primary">{{model.productDesc}}</label>
+            </div>
+          </div>
+        </div>
+
+        <!-- Button -->
+        <div class="form-group">
+          <label class="col-md-4 control-label"></label>
+          <div class="col-md-4"><br>
+            <!-- <button type="submit" class="btn btn-warning"  {{action "addProduct"}}>Add<span ></span></button> -->
+            <button class="btn btn-warning" id="createQuiz" class="btn btn-primary" Style="width: 100px;" {{action "startQuiz" model.productName}}>Start Quiz</button>
+          </div>
+        </div>
+
+      </fieldset>
+    </form>
   </div>
 </div>
-
-<div class="form-group row">
-  <label class="col-sm-1 col-form-label">Product Description:</label>
-  <div class="col-sm-5">
-    <label class="form-control-static text-primary">{{model.productDesc}}</label>
-  </div>
-</div>
-
-<div class="row" align="center">
- <div class="col-sm-12">
-     <button class="btn btn-primary btn-sx" id="createQuiz" class="btn btn-primary" Style="width: 100px;" {{action "startQuiz" model.productName}}>Start Quiz</button>
-  </div>
-</div>
-</div>
-<!-- end -->

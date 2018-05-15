@@ -24,7 +24,7 @@
       <ul class="nav navbar-nav pull-right">
         {{#link-to 'sign-up' tagName="li" }}<a href="">Signup</a>{{/link-to}}
       </ul>
-      <ul class="nav navbar-nav pull-right" >
+      <ul class="nav navbar-nav pull-right">
         {{#if isLoggedIn}}
           {{#link-to 'index' tagName="li" invokeAction=(action 'logout') }}<a href="">logout</a>{{/link-to}}
         {{else}}

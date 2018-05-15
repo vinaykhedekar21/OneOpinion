@@ -1,4 +1,3 @@
-
 <br/>
 <br/>
 <div class="container">
@@ -38,14 +37,14 @@
         </div>
       </div>
       {{#if isError}}
-      <div class="alert alert-success" style="color:red">Wrong Username or Password</div>
-    <!-- <h4><b style="color:red">Wrong Username or Password</b></h4> -->
+        <div class="alert alert-success" style="color:red">Wrong Username or Password</div>
+        <!-- <h4><b style="color:red">Wrong Username or Password</b></h4> -->
       {{/if}}
       <!-- Button -->
       <div class="form-group">
         <label class="col-md-4 control-label"></label>
         <div class="col-md-4"><br>
-          <button type="submit" disabled={{isDisabled}} class="btn btn-warning" {{action "signIn"}}>Login<span class="glyphicon glyphicon-send"></span></button>
+          <button type="submit" disabled= {{isDisabled}} class="btn btn-warning" {{action "signIn"}}>Login<span class="glyphicon glyphicon-send"></span></button>
         </div>
       </div>
 
